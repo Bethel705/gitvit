@@ -1,13 +1,14 @@
 import React from 'react'
 import "./app.scss"
-import Home from '../pages/Home/Home';
 import Navbar from './component/Navbar/Navbar'
+
+
 import {
   createBrowserRouter,
   RouterProvider,
   Outlet
 } from "react-router-dom";
-import Footer from './component/Footer/Footer';
+import Home from './pages/Home/Home';
 
 
 const App = () => {
@@ -17,7 +18,6 @@ const App = () => {
       <div className="app">
       <Navbar/>
       <Outlet/>
-      <Footer/>
     
       
       </div>
@@ -31,14 +31,13 @@ const App = () => {
         {
         path:"/",
         element:<Home/>
-      }
-
-      
+      },
+  
       
 
 
       ]
-    
+      
       
     },
   ]);
