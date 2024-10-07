@@ -7,6 +7,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import Footer from './component/Footer/Footer';
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
       <div className="app">
       <Navbar/>
       <Outlet/>
-      
+      <Footer/>
     
       
       </div>
