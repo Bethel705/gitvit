@@ -1,56 +1,22 @@
 import React from 'react'
-import "./app.scss"
 import Navbar from './component/Navbar/Navbar'
-
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
-import Home from './pages/Home/Home';
-
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from '../pages/Home/Home'
+import Register from '../pages/Register/Register';
+import Servicecat from '../pages/Servicecat/Servicecat';
 
 const App = () => {
-  const Layout = ()=>{
-    return (
-      
-      <div className="app">
-      <Navbar/>
-      <Outlet/>
-    
-      
-      </div>
-    )
-  } 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout/>,
-      children: [
-        {
-        path:"/",
-        element:<Home/>
-      },
-  
-      
-
-
-      ]
-      
-      
-    },
-  ]);
-  
   return (
-    <div>
-        <RouterProvider router={router} />   
-    </div>
-   
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Services" element={<Servicecat/>}/>
+        </Routes>
+    </BrowserRouter>
+    
   )
-  }
- 
- 
-
+}
 
 export default App

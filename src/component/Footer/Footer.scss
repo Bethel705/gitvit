@@ -1,0 +1,101 @@
+.Footer{
+    display: flex;
+    justify-content: center;
+    color: rgb(238, 233, 222);
+    padding-top: 50px;
+    margin-bottom: 0px;
+    background: linear-gradient(135deg, #7e8018, #090249);
+    img{
+    
+        width: 200px;
+        height: 80px;
+    }
+    .container{
+        width: 1000px;
+
+        .top{margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                flex-direction: column;
+                
+                .media{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    
+
+                }
+                h1{
+                    margin-top: 20px;
+                    font-size: 18px;
+                    font-weight: 600;
+
+                }
+                h3{
+                    padding-left: 8px;
+                    font-size: 13px;
+                    
+                }
+
+
+            }
+
+            
+
+        }
+        hr{
+            margin: 30px 0px;
+            height: 0;
+            border: 1px solid rgb(44, 34, 34);
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left{
+                display: flex;
+                align-items: center;
+                h1{
+                    color: rgb(202, 156, 3);
+
+                }
+                span{
+                    color: rgb(192, 192, 192);
+                    font-size: 13px;
+                    margin: 20px;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 18px;
+                    height: 18px;
+                    
+
+                }
+                
+            }
+
+        }
+
+    }
+}
+@media (max-width: 1024px){
+    img{
+        display: none;
+        
+
+    }
+    
+
+}

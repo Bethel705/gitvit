@@ -1,0 +1,62 @@
+.Testimonial{
+    height: 500px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-weight: 800;
+            font-size: 40px;
+            font-family: "Roboto", system-ui;
+        }
+    }
+    .slider-container{
+        display: flex;
+        margin: 30px;
+        gap: 100px;
+
+    }
+    .tes{
+        background-color: rgb(241, 241, 241);
+        width: 300px;
+        height: 250px;
+        border-radius: 5px;
+        top: 10px;
+        left: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        cursor: pointer;
+        .reviwe_img{
+            width: 120px;
+            height: 120px;
+            border-radius: 80px;
+
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .info{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+            }
+            
+            
+        }
+
+    }
+
+
+    }
+   

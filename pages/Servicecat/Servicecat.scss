@@ -1,0 +1,80 @@
+.Service{
+    display: flex;
+    background: white;
+    justify-content: center;
+    .container{
+        width: 1200px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        justify-content: space-between;
+        align-items: start;
+        .master{
+            font-weight: 300;
+            font-size: 13px;
+            color: #555;
+            
+        }
+        h1{
+            color: #555;
+            text-align: left;
+        }
+        p{
+            color: #999;
+            font-weight: 3oo;
+
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #555;
+                font-weight: 300;
+                .input{
+                    padding: 5px;
+                    border: 1px solid lightgray;
+                    outline: none;
+                    &::placeholder{
+                        color: gray;
+                    }
+                }
+                button{
+                    background-color: #1dbf73;
+                    color: white;
+                    font-weight: 500;
+                    border: none;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+    
+                }
+    
+            } 
+           .right{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .sortby{
+                color: #555;
+                font-weight: 500;
+
+            }
+           }
+        }
+        .cards{
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 100px;
+        }
+
+    }
+
+}
